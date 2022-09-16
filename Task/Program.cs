@@ -19,8 +19,26 @@ void PrintArray(string[] Name)
         Console.Write($"{Name[pozition]} ");
     }
 }
+void ArrayEditor(string[] N, string[] M)
+{
+    int x = 0;
+    string O = "";
+    for (int i = 0; i < N.Length; i++)
+    {
+        O = N[i];
+        if (O.Length <= 3) 
+        {
+            M[x] = O;
+            Console.Write($"{M[x]}, ");
+            x = x++;
+        }
+    }
+}
 Console.WriteLine("Заполните массив");
 CreatingArray(N);
 Console.WriteLine("Ваш массив");
 PrintArray(N);
+Console.WriteLine();
+Console.WriteLine("Ваш массив со строками, длинна которых, меньше или равна три символа");
+ArrayEditor(N,M);
 
