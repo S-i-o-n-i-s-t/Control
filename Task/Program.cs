@@ -19,4 +19,8 @@ void PrintArray(string[] Name)
         Console.Write($"{Name[pozition]} ");
     }
 }
+Console.WriteLine("Заполните массив");
+CreatingArray(N);
+Console.WriteLine("Ваш массив");
+PrintArray(N);
 
